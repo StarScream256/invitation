@@ -1,0 +1,288 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #121212;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 12vh;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 12vh;
+    margin: 0 auto;
+}
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+.nav-links {
+    color: white;
+    width: 35%;
+    display: flex;
+    place-items: center;
+    gap: 10px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+}
+.search-icon {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    background-color: rgb(90, 90, 90);
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.search-icon i::before {
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(90, 90, 90);
+}
+.search-input {
+    transform: translateX(100%);
+    transition: .5s ease;
+}
+.search-input input {
+    color: white;
+    height: 35px;
+    border: 0px solid white;
+    background-color: rgb(90, 90, 90);
+    font-size: 18px;
+    border-radius: 10px 0px 0px 10px;
+}
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 8vh;
+    border-radius: 10px;
+}
+.nav-links ul li {
+    list-style: none;
+    background-color: transparent;
+    width: calc(100% / 4);
+    height: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    transition: .6s ease;
+}
+.nav-links ul li a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+
+}
+.nav-links ul li:hover {
+    font-weight: 600;
+}
+
+/* PRICING */
+.pricing-container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+.pricing-wrapper {
+    width: 95%;
+    height: auto;
+    margin: 2em auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.pricing-items {
+    width: 300px;
+    height: 430px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(7px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0 0 0;
+    border-radius: 20px;
+}
+.main-price {
+    position: absolute;
+    background-color: antiquewhite;
+    color: black;
+    width: 90%;
+    padding: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 20px 0 rgb(0 0 0 / 40%);
+    margin: -32px auto 0;
+    top: 0;
+}
+.price-title {
+    font-weight: 400;
+    font-size: 16px;
+}
+.price-nom {
+    font-size: 25px;
+    font-weight: 700;
+    width: fit-content;
+}
+.pricing-content {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing-content p {
+    width: 90%;
+    text-align: center;
+}
+.pricing-content,
+.pricing-content h3,
+.pricing-content p,
+.main-price p {
+    background-color: transparent;
+}
+.pricing-img-wrap {
+    width: 280px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0 auto 1em auto;
+    border-radius: 10px;
+    position: relative;
+}
+.pricing-img {
+    width: 100%;
+    height: auto;
+}
+.pricing-img-see {
+    position: fixed;
+    z-index: 9999999;
+    height: 80vh;
+    width: 85vw;
+    display: block;
+    left: -50%;
+    top: -50%;
+}
+.pricing-img-detail {
+    width: 65px;
+    height: 25px;
+    background-color: white;
+    color: #121212;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 0px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+.pricing-img-detail i {
+    background-color: transparent;
+}
+.pricing-img-detail p {
+    width: fit-content;
+}
+.pricing-img-detail:hover {
+    background-color: rgb(209, 209, 209);
+}
+.pricing-btn {
+    margin: 1em auto 0 auto;
+    padding: 15px 25px;
+    border: 0px solid transparent;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+.pricing-btn:hover {
+    background-color: rgb(196, 196, 196);
+}
+.cari {
+    display: flex;
+    position: relative;
+    width: 400px;
+    overflow-x: hidden;
+}
+.carix {
+    width: calc(400px - 35px);
+    overflow: hidden;
+}
+.cari-inpt {
+    background-color: rgb(99, 96, 96);
+    outline: 0;
+    border: 0;
+    height: 40px;
+    width: calc(400px - 35px);
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 10px;
+    padding-right: 45px;
+    color: white;
+    font-weight: 500;
+    transform: translateX(100%);
+    transition: .5s ease;
+}
+.cari-inpt-ori {
+    transform: translateX(0);
+}
+.cari-icon {
+    width: 40px;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: rgb(68, 67, 67);
+    border-radius: 8px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.cari-iconx {
+    border-radius: 0px 8px 8px 0px;
+}
+.cari-icon i {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: rgb(68, 67, 67);
+}
